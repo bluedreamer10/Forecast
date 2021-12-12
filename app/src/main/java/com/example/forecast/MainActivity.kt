@@ -10,6 +10,7 @@ import android.provider.ContactsContract.CommonDataKinds.Website.URL
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_developer_details.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 import java.lang.Exception
@@ -57,7 +58,12 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
+        refreshButton.setOnClickListener{
+            weatherTask().execute()
+        }
+
         weatherTask().execute()
+
     }
 
     inner class weatherTask():AsyncTask<String,Void,String>()

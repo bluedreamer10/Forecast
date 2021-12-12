@@ -19,5 +19,11 @@ class DeveloperDetails : AppCompatActivity() {
             startActivity(browserIntent)
             finish()
         }
+
+        backButton.setOnClickListener {
+            val intent2 = Intent(this, MainActivity::class.java)
+            startActivity(intent2)
+            finish()
+        }
     }
 }
