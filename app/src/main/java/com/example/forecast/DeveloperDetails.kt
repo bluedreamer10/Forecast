@@ -17,13 +17,13 @@ class DeveloperDetails : AppCompatActivity() {
             Toast.makeText(this,"Opening LinkedIn Profile", Toast.LENGTH_LONG).show()
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/arin-verma-a600051b3/"))
             startActivity(browserIntent)
-            finish()
+
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
         }
 
         backButton.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
             finish()
+            overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right)
         }
     }
 }

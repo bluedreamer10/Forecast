@@ -4,14 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/btnshape.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/card_gradient.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/gradient_background.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/gradient_dev.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/photo_circle.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/drawable/text_bg.xml" value="0.3651041666666667" />
-        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_developer_details.xml" value="0.3489583333333333" />
-        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_splash.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_developer_details.xml" value="0.264" />
+        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/AndroidAppLearning/Forecast/app/src/main/res/layout/activity_splash.xml" value="0.264" />
       </map>
     </option>
   </component>

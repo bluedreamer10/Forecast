@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:background="@color/black">
+    android:background="@drawable/gradient_background">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="FORECAST"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/poppins_semibold"
         app:layout_constraintTop_toBottomOf="@id/lottie"
         app:layout_constraintLeft_toLeftOf="parent"
         android:gravity="center_horizontal"
@@ -36,7 +36,7 @@
         android:id="@+id/tag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/poppins_regular"
         android:gravity="center"
         android:text="Made By Arin Verma❤️ "
         android:textColor="@color/white"

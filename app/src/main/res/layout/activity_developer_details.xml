@@ -4,93 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeveloperDetails"
-    android:background="@drawable/gradient_dev">
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".DeveloperDetails">
 
-    <ImageView
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/backButton"
-        android:layout_width="58dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageArinVerma"
-        android:layout_width="265dp"
-        android:layout_height="228dp"
-        android:src="@drawable/developerphoto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
-
-    <TextView
-        android:id="@+id/nameArinVerma"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ARIN VERMA"
-        android:background="@drawable/text_bg"
-        android:fontFamily="monospace"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/imageArinVerma"
-        android:layout_marginTop="15dp"
-        android:textSize="25sp"/>
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/collegeArinVerma"
-        android:background="@drawable/text_bg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:text="BITS Pilani Hyderabad Campus"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/nameArinVerma"
-        android:layout_marginTop="15dp"
-        android:textSize="25sp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="30dp"
+            android:src="@drawable/developerphoto" />
 
-    <TextView
-        android:id="@+id/branchArinVerma"
-        android:layout_width="match_parent"
-        android:background="@drawable/text_bg"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:text="Double Majors | CSE &amp; Economics"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/collegeArinVerma"
-        android:layout_marginTop="15dp"
-        android:textSize="25sp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#2c3e50"
+            app:cardCornerRadius="20dp">
 
-    <ImageView
-        android:id="@+id/linkedInLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="28dp"
-        android:src="@drawable/linkedin3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/branchArinVerma" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/linkedInLogo"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginLeft="44dp"-->
-<!--        android:layout_marginTop="36dp"-->
-<!--        android:src="@drawable/linkedinlogo"-->
-<!--        app:layout_constraintLeft_toRightOf="@id/gmailLogo"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/branchArinVerma" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="Developer Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/instagramLogo"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginLeft="44dp"-->
-<!--        android:layout_marginTop="36dp"-->
-<!--        android:src="@drawable/instagramlogo"-->
-<!--        app:layout_constraintLeft_toRightOf="@id/linkedInLogo"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/branchArinVerma" />-->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/yellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"
+                    android:text="Arin Verma"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"
+                    android:text="BITS Pilani Hyderabad Campus"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"
+                    android:text="Double Majors | CSE &amp; Economics"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"
+                    android:text="arinverma10@gmail.com"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/linkedInLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-25dp"
+            android:elevation="30dp"
+            android:src="@drawable/linkedin3" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

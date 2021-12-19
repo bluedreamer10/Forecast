@@ -55,7 +55,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Developer Details",Toast.LENGTH_SHORT).show()
             val intent = Intent(this, DeveloperDetails::class.java)
             startActivity(intent)
-            finish()
+
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
+
         }
 
         refreshButton.setOnClickListener{
